@@ -16,6 +16,7 @@ import {
 } from '@mui/material'
 import Brightness4Icon from '@mui/icons-material/Brightness4'
 import Brightness7Icon from '@mui/icons-material/Brightness7'
+import GitHubIcon from '@mui/icons-material/GitHub'
 import MenuIcon from '@mui/icons-material/Menu'
 import PersonIcon from '@mui/icons-material/Person'
 import AuthDialog from './auth/AuthDialog'
@@ -110,6 +111,20 @@ const Header = () => {
                                 </Button>
                             )}
                         </Box>
+
+                        {/* GitHub Link */}
+                        <Tooltip title="View on GitHub">
+                            <IconButton
+                                color="inherit"
+                                href="https://github.com/oleh-kazaiev/blog"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                sx={{ mr: 1 }}
+                                aria-label="github"
+                            >
+                                <GitHubIcon />
+                            </IconButton>
+                        </Tooltip>
 
                         {/* Theme toggle */}
                         <Tooltip
